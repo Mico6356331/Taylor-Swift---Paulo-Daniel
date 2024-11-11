@@ -220,9 +220,7 @@ tr:nth-child(odd) {
 
     /* Ajusta as imagens da .container-image para ocupar uma coluna cada */
     .container-image {
-        display: grid;
         grid-template-columns: 1fr;
-        gap: 10px;
     }
 
     /* Ajusta o tamanho da imagem principal para caber na tela menor */

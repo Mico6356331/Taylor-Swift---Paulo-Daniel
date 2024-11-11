@@ -73,14 +73,16 @@ footer {
 
 .container-image {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    object-fit: cover;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
 }
 
 .border_img {
+    width: 100%; /* Ajusta para ocupar o espaço do grid */
+    height: auto;
     border: 1px solid black;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 /* Ingressos */
@@ -100,7 +102,7 @@ input[type="text"],
 input[type="email"],
 textarea {
     padding: 10px;
-    margin-bottom:15px;
+    margin-bottom: 15px;
     border: 1px solid grey;
     border-radius: 5px;
 }
@@ -218,7 +220,7 @@ tr:nth-child(odd) {
         padding: 15px;
     }
 
-    /* Ajusta as imagens da .container-image para ocupar uma coluna cada */
+    /* Ajusta o tamanho das imagens da .container-image para ocupar uma coluna cada */
     .container-image {
         grid-template-columns: 1fr;
     }
